@@ -1,0 +1,88 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: grey;
+}
+
+.save-note, .new-note, .clear-btn {
+  display: block;
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icons {
+  margin: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.note-textarea, .note-title {
+  color: #333;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.note-textarea {
+  resize: none;
+  height: calc(100% - 100px);
+}
+
+.note-title {
+  height: 40px;
+  font-size: 2rem;
+}
+
+.note-title:read-only, .note-textarea:read-only {
+  color: #999;
+}
+
+.list-container .card {
+  height: calc(100vh - 100px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.list-container {
+  padding: 10px;
+}
+
+.list-container .list-group, .list-container .list-group-item:first-child, .list-container .card {
+  border: none;
+}
+
+.list-item-title {
+  display: inline-block;
+  width: 70%;
+  font-weight: bold;
+}
+
+.list-container i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.list-container .list-group-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
