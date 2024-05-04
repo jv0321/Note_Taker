@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const api_routes = require('./routes/apiRoutes');
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
 // Serve static files from the public directory
 app.use(express.static('./public'));
